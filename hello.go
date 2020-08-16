@@ -60,10 +60,8 @@ func main(){
 			fmt.Fprintln(open_, open)
 			fmt.Fprintln(close_, close)
 			fmt.Fprintln(high_, high)
-			fmt.Fprintln(low_, low)
-			
- 
-        	open = close
+			fmt.Fprintln(low_, low)	
+			open = close
         }
         current = it
         if current > high { high = current}
