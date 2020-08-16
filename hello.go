@@ -11,6 +11,7 @@ func gen() (float32){
 }
 
 func main(){	
+	rand.Seed(int64(time.Now().Nanosecond()))
 	const delta_mult float32 = 10000
 	const delta float32 = 300
     var outs float32 = 75.0
@@ -44,7 +45,7 @@ func main(){
     var counter int64 = 1
     var start bool = true
     var current float32 = 0.0
-    open = 0; high =0; low = 0; close = 0;    
+    open = 75; high =0; low = 0; close = 0;    
     for i=0; i<iteration; i++{
         it=outs___[i];
         if ((counter % step == 1)   && (start == true)){
